@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 import com.educandoweb.course.entities.Order;
 import com.educandoweb.course.entities.Product;
@@ -13,11 +14,11 @@ import com.educandoweb.course.entities.Product;
 public class OrderItemPK implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	@ManyToMany
+	@ManyToOne
 	@JoinColumn(name="order_id")
 	private Order order;
 	
-	@ManyToMany
+	@ManyToOne
 	@JoinColumn(name="product_id")
 	private Product product;
 	
