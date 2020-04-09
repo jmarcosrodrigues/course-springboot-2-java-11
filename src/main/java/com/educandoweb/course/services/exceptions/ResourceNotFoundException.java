@@ -1,4 +1,4 @@
-package com.educandoweb.course.entities.exceptions;
+package com.educandoweb.course.services.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
